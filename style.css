@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#navbar{
+    background-color: red;
+    width: 100%;
+    height: 70px;
+}
+
+#navbar h1{
+    padding: 10px;
+}
+
+#book-details{
+    background-color: black;
+    width: 25%;
+    color: white;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
+    transition: 1s ease;
+}
+
+#book-details:hover{
+    box-shadow: 0 4px 12px red;
+    cursor: pointer;
+    transform: translateY(5px);
+
+}
+
+#book-details h2{
+    color: red;
+}
+
+#book-details button{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#book-details p{
+    text-align: justify;
+}
+
+#icon{
+    background-color: red;
+    color: white;
+    border-radius: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    font-size: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#popup-overlay{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#popup-box{
+    background-color: red;
+    width: 40%;
+    padding: 40px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    border-radius: 10px;
+    display: none;
+}
+
+#popup-box input{
+    background: transparent;
+    border: none;
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+    color: white;
+}
+
+#popup-box textarea{
+    background: transparent;
+    border: none;
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+    color: white;
+} 
+
+#popup-box input::placeholder{
+    color: black;
+}
+
+#popup-box textarea::placeholder{
+    color: black;
+}
+
+#popup-box input:focus{
+    outline: none;
+}
+
+#popup-box textarea:focus{
+    outline: none;
+}
+
+#popup-box button{
+    background-color: black;
+    color: white;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/* media query */
+@media (max-width: 480px) {
+    #navbar{
+        position: fixed;
+    }
+
+    #navbar h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+    }
+
+   #book-details{
+    width: 75%;
+    margin-top: 100px;
+    margin-bottom: -60px;
+    }
+
+    #book-details button{
+     margin-left: 85px;
+    }
+
+    #popup-overlay{
+        width: 100%;
+    }
+
+    #popup-box{
+     width: 90%;
+     margin-left: -105px;
+}
+
+}
